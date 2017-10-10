@@ -2,15 +2,15 @@
 #define MY_H
 
 #include <iostream>
-#include <cctype>
 #include <string>
 #include <vector>
+#include <cctype>
 
-using std::cout;
-using std::cin;
-using std::cerr;
-using std::endl;
 using std::string;
 using std::vector;
+using std::cin;
+using std::cout;
+using std::cerr;
+using std::endl;
 
 #endif
