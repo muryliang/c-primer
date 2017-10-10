@@ -5,6 +5,9 @@
 #include <string>
 #include <vector>
 #include <cctype>
+#include <cstring>
+#include <cstddef>
+#include <stdexcept>
 
 using std::string;
 using std::vector;
@@ -12,5 +15,7 @@ using std::cin;
 using std::cout;
 using std::cerr;
 using std::endl;
+using std::runtime_error;
+using std::exception;
 
 #endif
