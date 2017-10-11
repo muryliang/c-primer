@@ -9,6 +9,7 @@
 #include <cstddef>
 #include <stdexcept>
 #include <initializer_list>
+#include <cassert>
 
 using std::string;
 using std::vector;
