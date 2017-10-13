@@ -10,6 +10,7 @@
 #include <stdexcept>
 #include <initializer_list>
 #include <cassert>
+#include <algorithm>
 
 //container
 #include <vector>
@@ -44,6 +45,8 @@ using std::array;
 using std::begin;
 using std::end;
 using std::stack;
+using std::find;
+using std::count;
 
 #define ploop(cont) do {for (auto i:cont) \
 { cout << i << " "; } \

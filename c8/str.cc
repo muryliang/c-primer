@@ -5,9 +5,8 @@ void hehe(stringstream &ss) {
 }
 
 int main() {
-    stringstream ss("hehe");
-    ss << "one more time" << endl;
-    ss << "two more time" << endl;
-    cout << ss.str() << endl;
+    string s("hehe", 5);
+    string s2("hehe");
+    cout << s.size() << " " << s2.size() << endl;
     return 0;
 }
