@@ -21,6 +21,8 @@
 #include <array>
 #include <stack>
 
+//algorithm
+
 using std::cin;
 using std::cout;
 using std::cerr;
@@ -47,9 +49,10 @@ using std::end;
 using std::stack;
 using std::find;
 using std::count;
+using std::equal;
 
 #define ploop(cont) do {for (auto i:cont) \
-{ cout << i << " "; } \
+{ cout << i << " "; } cout << endl; \
 }while(0)
 
 #endif
