@@ -61,4 +61,8 @@ using std::ostream_iterator;
 { cout << i << " "; } cout << endl; \
 }while(0)
 
+#define piloop(b,e) do {for (auto i = b; i != e; ++i) \
+{ cout << *i << " "; } cout << endl; \
+}while(0)
+
 #endif

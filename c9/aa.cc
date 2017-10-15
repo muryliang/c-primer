@@ -5,8 +5,9 @@ void func(ostream &i) {
 }
 
 int main() {
-    int i = 20;
-    auto f = bind(func, _1);
-    f(cout);
+    list<int> li{1,1,2,3,4,3,5};
+    li.sort();
+    li.unique();
+    ploop(li);
     return 0;
 }
