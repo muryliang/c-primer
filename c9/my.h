@@ -22,6 +22,8 @@
 #include <stack>
 
 //algorithm
+#include <functional>
+#include <iterator>
 
 using std::cin;
 using std::cout;
@@ -50,6 +52,10 @@ using std::stack;
 using std::find;
 using std::count;
 using std::equal;
+using namespace std::placeholders;
+using std::ref;
+using std::istream_iterator;
+using std::ostream_iterator;
 
 #define ploop(cont) do {for (auto i:cont) \
 { cout << i << " "; } cout << endl; \
