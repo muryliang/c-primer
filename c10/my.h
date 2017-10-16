@@ -67,6 +67,9 @@ using std::map;
 using std::multiset;
 using std::multimap;
 using std::pair;
+using std::unordered_multimap;
+using std::unordered_multiset;
+using std::unordered_map;
 
 #define ploop(cont) do {for (auto i:cont) \
 { cout << i << " "; } cout << endl; \
