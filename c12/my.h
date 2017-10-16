@@ -31,11 +31,15 @@
 #include <unordered_map>
 #include <unordered_set>
 
+//memory
+#include <memory>
+
 using std::cin;
 using std::cout;
 using std::cerr;
 using std::endl;
 using std::runtime_error;
+using std::out_of_range;
 using std::exception;
 using std::initializer_list;
 using std::istream;
@@ -71,6 +75,8 @@ using std::unordered_multimap;
 using std::unordered_multiset;
 using std::unordered_map;
 using std::unordered_set;
+using std::shared_ptr;
+using std::make_shared;
 
 #define ploop(cont) do {for (auto i:cont) \
 { cout << i << " "; } cout << endl; \
