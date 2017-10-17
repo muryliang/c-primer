@@ -77,6 +77,13 @@ using std::unordered_map;
 using std::unordered_set;
 using std::shared_ptr;
 using std::make_shared;
+using std::unique_ptr;
+using std::weak_ptr;
+using std::uninitialized_copy;
+using std::uninitialized_fill_n;
+using std::uninitialized_fill;
+using std::uninitialized_copy_n;
+using std::allocator;
 
 #define ploop(cont) do {for (auto i:cont) \
 { cout << i << " "; } cout << endl; \
