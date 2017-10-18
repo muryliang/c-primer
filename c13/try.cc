@@ -10,7 +10,13 @@ struct C {
 //    C& operator=(C&& q) noexcept { a = std::move(q.a); cout << "in move assign" << endl;  return *this;}
     C sorted() const &;
 //    C sorted() const &&;
+    friend ostream& operator<<(ostream& output, C&);
 };
+
+ostream& operator<<(ostream& output, C& a) {
+    output << "in reload of << ";
+    return output;
+}
 
 C create() {
     return C(vector<int>{1,2,3,4});
@@ -22,6 +28,7 @@ C C::sorted() const & {
  //   return ret.sorted();
     return create().sorted();
 }
+
 /*
 C C::sorted() const && {
     C ret(*this);
@@ -39,6 +46,7 @@ int main() {
     C d(k);
     d =  std::move(c);
     cout << "done" << endl;
-    create().sorted();
+    cout << d << endl;
+//    create().sorted();
     return 0;
 }
