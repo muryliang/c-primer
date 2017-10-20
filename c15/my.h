@@ -11,6 +11,7 @@
 #include <initializer_list>
 #include <cassert>
 #include <algorithm>
+#include <bitset>
 
 //container
 #include <vector>

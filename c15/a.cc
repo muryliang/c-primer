@@ -24,10 +24,10 @@ ostream& operator<<(ostream &os, const A& a) {
 }
 
 int main() {
-    vector<A> vi;
-    vi.emplace_back();
-    cout << "print vi" << endl;
-    ploop(vi);
+    std::bitset<32> bs;
+    cin >> bs;
+    cout << bs[0] << bs[1] << bs[2] << bs[3] << endl;
+    cout << bs[31] << bs[30] << bs[29] << bs[28] << endl;
     return 0;
 }
 
