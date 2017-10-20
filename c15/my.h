@@ -84,6 +84,7 @@ using std::uninitialized_fill_n;
 using std::uninitialized_fill;
 using std::uninitialized_copy_n;
 using std::allocator;
+using std::less;
 
 #define ploop(cont) do {for (auto i:cont) \
 { cout << i << " "; } cout << endl; \
