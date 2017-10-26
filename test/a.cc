@@ -18,9 +18,11 @@ class B{
         B(A& a): k(50, 100) { cout << " in B class" << endl;}
 };
 
+void end1(int* p) noexcept {
+    cout << "now end of p" << endl;
+}
+
 int main() {
-    A a{20, 21};
-    cout << "begin" << endl;
-    B b{a};
+    shared_ptr<int> aa(static_cast<int*>(0), end1);
     return 0;
 }
